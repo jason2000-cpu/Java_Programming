@@ -15,14 +15,33 @@
 /**
  * String Buffer
  * - they are mutable strings (strings that can be changed)
+ * - Slower than StringBuilder because of syncrhonization
+ *
+ */
+// public class Strings {
+//     public static void main(String a[]) {
+//         StringBuffer sb = new StringBuffer("Jackson");
+//         System.out.println(sb.capacity());
+//         sb.append(" Mwangi");
+//         sb.delete(0, 2);
+//         System.out.println(sb);
+//     }
+// }
+/**
+ * String Builder
+ * - they are mutable strings
+ * - faster than StringBuffer
  */
 public class Strings {
 
     public static void main(String a[]) {
-        StringBuffer sb = new StringBuffer("Jackson");
-        System.out.println(sb.capacity());
-        sb.append(" Mwangi");
+        StringBuilder sb = new StringBuilder();
+        StringBuilder sb2 = new StringBuilder("Hello");
 
-        System.out.println(sb);
+        System.out.println("STRING::" + sb);
+        System.out.println("STRING TWO::" + sb2);
+
+        System.out.println("STRING ONE CAPACITY:::" + sb.capacity());
+        System.out.println("STRING TWO CAPACITY::" + sb2.capacity());
     }
 }
