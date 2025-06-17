@@ -1,14 +1,14 @@
 
-abstract class Car {
+abstract class Car {   // Abstract class
 
-    abstract void drive();
+    abstract void drive(); // Abstract method
 
     void listenMusic() {
         System.out.println("Listening to music...");
     }
 }
 
-class WagonR extends Car {
+class WagonR extends Car {  // concerete class
 
     void drive() {
         System.out.println("Driving Car...");
