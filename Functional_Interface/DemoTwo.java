@@ -1,7 +1,6 @@
 
 @FunctionalInterface
 interface X {
-
     int add(int i, int j);
 }
 
@@ -16,10 +15,9 @@ public class DemoTwo {
         };
 
         X obj2 = (i, j) -> i + j;
-        int add = obj2.add(5, 4);
+        int result = obj2.add(5, 4);
 
-        System.out.println("Result  " + add);
-
+        System.out.println("Result  " + result);
     }
 ;
 }
