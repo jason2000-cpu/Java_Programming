@@ -32,19 +32,19 @@
 public class DemoTwo {
     public static void main(String a[]) {
         Runnable obj1 = () -> {
-                for(int i = 1; i >= 10; i++){
+                for(int i = 1; i <= 10; i++){
                     System.out.println("Hello " + i);
                 }
         };
 
         Runnable obj2 = () -> {
-                for(int i = 1; i >= 10; i++){
+                for(int i = 1; i <= 10; i++){
                     System.out.println("How are you?  " + i);
                 }
         };
 
         Runnable obj3 = () -> {
-                for(int i = 1; i >= 10; i++){
+                for(int i = 1; i <= 10; i++){
                     System.out.println("I Hope You are Doing Fine!  " + i);
                 }
         };
@@ -53,14 +53,14 @@ public class DemoTwo {
         Thread t2 = new Thread(obj2);
         Thread t3 = new Thread(obj3);
 
-        // //setting priority to maximum
-        // t1.setPriority(Thread.MAX_PRIORITY);
+        //setting priority to maximum
+        t1.setPriority(Thread.MAX_PRIORITY);
 
-        // //Setting priority to minimum
-        // t2.setPriority(Thread.MIN_PRIORITY);
+        //Setting priority to minimum
+        t2.setPriority(Thread.MIN_PRIORITY);
 
-        // //Setting priority to normal
-        // t3.setPriority(Thread.NORM_PRIORITY);
+        //Setting priority to normal
+        t3.setPriority(Thread.NORM_PRIORITY);
 
         t1.start();
         t2.start();
