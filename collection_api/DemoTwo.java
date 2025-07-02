@@ -37,7 +37,7 @@ public class DemoTwo {
 
         System.out.println("\n");
 
-        // clearing the k-v pairs
+        // clearing the key-value pairs
         students.clear();
         System.out.println("Empty Student Details ::: "+  students);
     }
