@@ -18,5 +18,18 @@ public class Array{
 
         return size;
     }
+
+    public static int[] slice(int[] array, int start, int stop) {
+
+        int arrlength = length(array);
+        int[] result = {};
+
+        if (start < 0 || start > arrlength) throw new ArrayIndexOutOfBoundsException();
+        if (start > stop) throw new IllegalArgumentException();
+        if (array == null) throw new NullPointerException();
+
+
+        return result;
+    }
 }
 
